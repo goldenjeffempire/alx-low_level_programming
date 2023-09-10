@@ -1,6 +1,4 @@
 #include <stdio.h>
-	puts("\"Programming is like building a multilingual puzzle");
-i	puts("\"Programming is like building a multilingual puzzle");
 
 /**
   * main - Entry point
@@ -17,8 +15,9 @@ int main(void)
 		if (n != 57)
 		{
 			putchar(',');
-			putchar('');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
 	return (0);
+}
