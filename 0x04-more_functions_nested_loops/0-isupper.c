@@ -5,7 +5,7 @@
   *
   * @c: The character to be checked
   *
-  * Return 1 if the character is uppercase, and 0 otherwise
+  * Return: it's returns 1 when c is uppercase and 0 when lowercase
   */
 int _isupper(int c)
 {
