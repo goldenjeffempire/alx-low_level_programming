@@ -3,11 +3,11 @@
 /**
   * _isdigit - Check if a character is a digit(0-9)
   *
-  * @c - The character to be checked
+  * @c: The integer to be checked
   *
-  * Return: 1 if c is a digit, 0 otherwise
+  * Return: 1 if the character is a digit, 0 otherwise
   */
-int _isdigit(int c);
+int _isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
 	{
