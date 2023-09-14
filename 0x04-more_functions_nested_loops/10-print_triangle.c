@@ -7,17 +7,9 @@
   */
 void print_triangle(int size)
 {
-	if (size <= 0)
-	{
-		_putchar('\n');
-		return;
-	}
-	for (int row = 1; row <= size; row++)
-	{
-		for (int column = 1; column <= row; column++)
-		{
-			_putchar('#');
-		}
-		_putchar('\n');
-	}
+	print_triangle(2);
+	print_triangle(10);
+	print_triangle(1);
+	print_triangle(0);
+	return (0);
 }
