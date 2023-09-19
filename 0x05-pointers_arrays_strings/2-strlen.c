@@ -1,22 +1,16 @@
 #include "main.h"
 
 /**
-  * _strlen - This function is an integer
-  *
-  * @s: Represent a pointer to a character
-  * @_strlen: length of the string
-  *
-  * Return: length (Success)
-  */
+ * _strlen - a string length
+ * @s: count length
+ * Return: string length
+ */
 int _strlen(char *s)
 {
-	int length = 0;
+	int i;
+	int count = 0;
 
-	while (*s != '\0')
-	{
-		length++;
-		s++;
-	}
-
-	return (length);
+	for (i = 0; s[i] != '\0'; i++)
+		count++;
+	return (count);
 }
