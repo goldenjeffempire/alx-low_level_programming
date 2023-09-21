@@ -1,23 +1,25 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * _strcmp - compare
- * @s1 : pointerto char params
- * @s2 : pointer to char params
- * Return: *dest
+ * print_rev - Prints a string in reverse
+ * @s: The string to print
+ *
+ * Return: void
  */
-
-int _strcmp(char *s1, char *s2)
+void print_rev(char *s)
 {
-	int i;
-	int R;
+	int c = 0;
 
-	i = 0;
-
-	while (s1[i] == s2[i] && (s1[i] != '\0' || s2[i] != '\0'))
+	while (s[c] != '\0')
 	{
-		i++;
+		c++;
 	}
-	R = s1[i] - s2[i];
-	return (R);
+
+	for (c -= 1; c >= 0; c--)
+	{
+		_putchar(s[c]);
+	}
+
+	_putchar('\n');
 }
