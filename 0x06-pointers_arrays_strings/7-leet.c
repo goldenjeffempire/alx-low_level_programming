@@ -1,35 +1,26 @@
 #include "main.h"
 
 /**
- * puts_half - Prints half of a string
- * @str: The string to print
- *
- * Return: void
+ * leet - encode
+ * @s: pointer to char params
+ * Return: *s
  */
-void puts_half(char *str)
+
+char *leet(char *s)
 {
-	int j = 0;
-	int k;
+	int i;
+	int j;
+	char l[] = "ol_ea__t";
 
-	while (str[j] != '\0')
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		j++;
+		for (j = 0; l[j] != '\0'; j++)
+		{
+			if (s[i] == l[j] || s[i] == (l[j] - 32))
+			{
+				s[i] = j + '0';
+			}
+		}
 	}
-
-	if (j % 2 == 1)
-	{
-		k = (j - 1) / 2;
-		k += 1;
-	}
-	else
-	{
-		k = j / 2;
-	}
-
-	for (; k < j; k++)
-	{
-		_putchar(str[k]);
-	}
-
-	_putchar('\n');
+	return (s);
 }
