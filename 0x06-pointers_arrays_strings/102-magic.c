@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-  * main - Entry point
+  * main - magic
   * Return: Always 0
   */
 int main(void)
