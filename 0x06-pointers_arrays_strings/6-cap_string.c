@@ -1,25 +1,25 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * puts2 - Prints every other character of a string
- * @str: The string to be treated
+ * *cap_string - this is awesome
+ * @s: pointer to char params
  *
- * Return: void
+ * Return: *s
  */
-void puts2(char *str)
+
+char *cap_string(char *s)
 {
-	int i;
-	int j = 0;
+	int i, j;
+	char delimeters[] = " \t\n,;.!?\"(){}";
 
-	while (str[j] != '\0')
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		j++;
+		if (s[0] >= 97 && s[0] <= 122)
+			s[0] = s[0] - 32;
+		for (j = 0; delimeters[j] != '\0'; j++)
+			if (s[i] == delimeters[j] && s[i + 1] >= 97 && s[i + 1] <= 122)
+				s[i + 1] = s[i + 1] - 32;
 	}
-
-	for (i = 0; i < j; i += 2)
-	{
-		_putchar(str[i]);
-	}
-
-	_putchar('\n');
+	return (s);
 }
