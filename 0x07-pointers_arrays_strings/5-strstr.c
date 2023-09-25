@@ -37,5 +37,5 @@ if (_strncmp(haystack, needle, len) == 0)
 return (haystack);
 haystack++;
 }
-return (NULL);
-}
+return (NULL)
+
