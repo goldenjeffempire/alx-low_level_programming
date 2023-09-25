@@ -1,4 +1,4 @@
-#include "main.h"
+#includes "main.h"
 /**
  * _strncmp - compares two strings within b bytes.
  * @s1: string to check
