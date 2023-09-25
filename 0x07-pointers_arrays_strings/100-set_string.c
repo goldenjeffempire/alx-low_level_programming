@@ -1,14 +1,19 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
-  * set_string - Sets the value of a pointer to a char
-  * @s: The double pointer to be updated
-  * @to: The pointer to set the value to
-  */
-void set_string(char **s, char *to)
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
 {
-	if (s == NULL)
-		return;
+	char *s0 = "Bob Dylan";
+	char *s1 = "Robert Allen";
 
-	*s = to;
+	printf("%s, %s\n", s0, s1);
+	set_string(&s1, s0);
+	printf("%s, %s\n", s0, s1);
+	return (0);
+
 }
