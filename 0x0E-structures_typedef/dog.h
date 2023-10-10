@@ -1,17 +1,18 @@
 #ifndef DOG_H
 #define DOG_H
+
 /**
-  * struct dog - a struct representing a dog
-  * @name: a pointer to a char representing the dog's name
-  * @age: a float representing the dog's age
-  * @owner: a pointer to a char representing the dog's owner
-  *
-  * Description: This struct represents a dog and its attributes
-  */
+ * struct dog - a struct representing a dog
+ * @name: a pointer to a char representing the dog's name
+ * @age: a float representing the dog's age
+ * @owner: a pointer to a char representing the dog's owner
+ *
+ * Description: Longer description
+ */
 struct dog
 {
 	char *name;
-	float *age;
+	float age;
 	char *owner;
 };
 
